@@ -1,0 +1,234 @@
+package com.example.application.views.kalorienrechner;
+
+import com.example.application.components.avataritem.AvatarItem;
+import com.example.application.views.MainLayout;
+import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.avatar.Avatar;
+import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.button.ButtonVariant;
+import com.vaadin.flow.component.checkbox.CheckboxGroup;
+import com.vaadin.flow.component.checkbox.CheckboxGroupVariant;
+import com.vaadin.flow.component.combobox.ComboBox;
+import com.vaadin.flow.component.dependency.Uses;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.listbox.MultiSelectListBox;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.textfield.TextField;
+import com.vaadin.flow.data.renderer.ComponentRenderer;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
+import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
+import java.util.ArrayList;
+import java.util.List;
+
+@PageTitle("Kalorienrechner")
+@Route(value = "my-view5", layout = MainLayout.class)
+@Uses(Icon.class)
+public class KalorienrechnerView extends Composite<VerticalLayout> {
+
+    public KalorienrechnerView() {
+        HorizontalLayout layoutRow = new HorizontalLayout();
+        HorizontalLayout layoutRow2 = new HorizontalLayout();
+        HorizontalLayout layoutRow3 = new HorizontalLayout();
+        Button buttonPrimary = new Button();
+        Button buttonPrimary2 = new Button();
+        Button buttonPrimary3 = new Button();
+        Button buttonPrimary4 = new Button();
+        HorizontalLayout layoutRow4 = new HorizontalLayout();
+        Button buttonPrimary5 = new Button();
+        Button buttonPrimary6 = new Button();
+        VerticalLayout layoutColumn2 = new VerticalLayout();
+        HorizontalLayout layoutRow5 = new HorizontalLayout();
+        VerticalLayout layoutColumn3 = new VerticalLayout();
+        VerticalLayout layoutColumn4 = new VerticalLayout();
+        HorizontalLayout layoutRow6 = new HorizontalLayout();
+        Button buttonPrimary7 = new Button();
+        Button buttonPrimary8 = new Button();
+        HorizontalLayout layoutRow7 = new HorizontalLayout();
+        TextField textField = new TextField();
+        TextField textField2 = new TextField();
+        TextField textField3 = new TextField();
+        TextField textField4 = new TextField();
+        CheckboxGroup checkboxGroup = new CheckboxGroup();
+        HorizontalLayout layoutRow8 = new HorizontalLayout();
+        ComboBox comboBox = new ComboBox();
+        ComboBox comboBox2 = new ComboBox();
+        Button buttonPrimary9 = new Button();
+        HorizontalLayout layoutRow9 = new HorizontalLayout();
+        CheckboxGroup checkboxGroup2 = new CheckboxGroup();
+        MultiSelectListBox avatarItems = new MultiSelectListBox();
+        getContent().setWidth("100%");
+        getContent().getStyle().set("flex-grow", "1");
+        layoutRow.addClassName(Gap.MEDIUM);
+        layoutRow.setWidth("100%");
+        layoutRow.setHeight("min-content");
+        layoutRow2.setHeightFull();
+        layoutRow.setFlexGrow(1.0, layoutRow2);
+        layoutRow2.addClassName(Gap.MEDIUM);
+        layoutRow2.setWidth("100%");
+        layoutRow2.getStyle().set("flex-grow", "1");
+        layoutRow2.setAlignItems(Alignment.CENTER);
+        layoutRow2.setJustifyContentMode(JustifyContentMode.CENTER);
+        layoutRow3.setHeightFull();
+        layoutRow2.setFlexGrow(1.0, layoutRow3);
+        layoutRow3.addClassName(Gap.MEDIUM);
+        layoutRow3.setWidth("100%");
+        layoutRow3.getStyle().set("flex-grow", "1");
+        layoutRow3.setAlignItems(Alignment.CENTER);
+        layoutRow3.setJustifyContentMode(JustifyContentMode.CENTER);
+        buttonPrimary.setText("Startseite");
+        buttonPrimary.setWidth("min-content");
+        buttonPrimary.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonPrimary2.setText("Trainingshistorie");
+        buttonPrimary2.setWidth("min-content");
+        buttonPrimary2.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonPrimary3.setText("Kalorien rechner");
+        buttonPrimary3.setWidth("min-content");
+        buttonPrimary3.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonPrimary4.setText("Trainingsplan erstellen");
+        buttonPrimary4.setWidth("min-content");
+        buttonPrimary4.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        layoutRow4.setHeightFull();
+        layoutRow2.setFlexGrow(1.0, layoutRow4);
+        layoutRow4.addClassName(Gap.MEDIUM);
+        layoutRow4.setWidth("214px");
+        layoutRow4.getStyle().set("flex-grow", "1");
+        layoutRow4.setAlignItems(Alignment.CENTER);
+        layoutRow4.setJustifyContentMode(JustifyContentMode.END);
+        buttonPrimary5.setText("Hilfe");
+        buttonPrimary5.setWidth("min-content");
+        buttonPrimary5.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonPrimary6.setText("Ausloggen");
+        buttonPrimary6.setWidth("min-content");
+        buttonPrimary6.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        layoutColumn2.setWidth("100%");
+        layoutColumn2.getStyle().set("flex-grow", "1");
+        layoutRow5.addClassName(Gap.MEDIUM);
+        layoutRow5.setWidth("100%");
+        layoutRow5.setHeight("min-content");
+        layoutRow5.setAlignItems(Alignment.CENTER);
+        layoutRow5.setJustifyContentMode(JustifyContentMode.CENTER);
+        layoutColumn3.setWidth("851px");
+        layoutColumn3.getStyle().set("flex-grow", "1");
+        layoutColumn4.setWidthFull();
+        layoutColumn3.setFlexGrow(1.0, layoutColumn4);
+        layoutColumn4.setWidth("100%");
+        layoutColumn4.getStyle().set("flex-grow", "1");
+        layoutRow6.setWidthFull();
+        layoutColumn4.setFlexGrow(1.0, layoutRow6);
+        layoutRow6.addClassName(Gap.MEDIUM);
+        layoutRow6.setWidth("100%");
+        layoutRow6.setHeight("50px");
+        buttonPrimary7.setText("Männlich");
+        buttonPrimary7.setWidth("min-content");
+        buttonPrimary7.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonPrimary8.setText("Weiblich");
+        buttonPrimary8.setWidth("min-content");
+        buttonPrimary8.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        layoutRow7.setWidthFull();
+        layoutColumn4.setFlexGrow(1.0, layoutRow7);
+        layoutRow7.addClassName(Gap.MEDIUM);
+        layoutRow7.setWidth("100%");
+        layoutRow7.setHeight("100px");
+        textField.setLabel("Gewicht:");
+        textField.setWidth("min-content");
+        textField2.setLabel("Größe:");
+        textField2.setWidth("min-content");
+        textField3.setLabel("Alter:");
+        textField3.setWidth("min-content");
+        textField4.setLabel("Schlaf (in h):");
+        textField4.setWidth("min-content");
+        checkboxGroup.setLabel("Tägliches Aktivitäs Level");
+        checkboxGroup.setWidth("min-content");
+        checkboxGroup.setItems("Order ID", "Product Name", "Customer", "Status");
+        checkboxGroup.addThemeVariants(CheckboxGroupVariant.LUMO_VERTICAL);
+        layoutRow8.setWidthFull();
+        layoutColumn4.setFlexGrow(1.0, layoutRow8);
+        layoutRow8.addClassName(Gap.MEDIUM);
+        layoutRow8.setWidth("100%");
+        layoutRow8.setHeight("100px");
+        comboBox.setLabel("Trainingstage die Woche:");
+        comboBox.setWidth("min-content");
+        setComboBoxSampleData(comboBox);
+        comboBox2.setLabel("Sportart (primär):");
+        comboBox2.setWidth("min-content");
+        setComboBoxSampleData(comboBox2);
+        buttonPrimary9.setText("Sportart hinzufügen");
+        layoutRow8.setAlignSelf(FlexComponent.Alignment.CENTER, buttonPrimary9);
+        buttonPrimary9.setWidth("min-content");
+        buttonPrimary9.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        layoutRow9.setWidthFull();
+        layoutColumn4.setFlexGrow(1.0, layoutRow9);
+        layoutRow9.addClassName(Gap.MEDIUM);
+        layoutRow9.setWidth("100%");
+        layoutRow9.getStyle().set("flex-grow", "1");
+        checkboxGroup2.setLabel("Ziel:");
+        checkboxGroup2.setWidth("min-content");
+        checkboxGroup2.setItems("Order ID", "Product Name", "Customer", "Status");
+        checkboxGroup2.addThemeVariants(CheckboxGroupVariant.LUMO_VERTICAL);
+        avatarItems.setWidth("min-content");
+        setAvatarItemsSampleData(avatarItems);
+        getContent().add(layoutRow);
+        layoutRow.add(layoutRow2);
+        layoutRow2.add(layoutRow3);
+        layoutRow3.add(buttonPrimary);
+        layoutRow3.add(buttonPrimary2);
+        layoutRow3.add(buttonPrimary3);
+        layoutRow3.add(buttonPrimary4);
+        layoutRow2.add(layoutRow4);
+        layoutRow4.add(buttonPrimary5);
+        layoutRow4.add(buttonPrimary6);
+        getContent().add(layoutColumn2);
+        layoutColumn2.add(layoutRow5);
+        layoutRow5.add(layoutColumn3);
+        layoutColumn3.add(layoutColumn4);
+        layoutColumn4.add(layoutRow6);
+        layoutRow6.add(buttonPrimary7);
+        layoutRow6.add(buttonPrimary8);
+        layoutColumn4.add(layoutRow7);
+        layoutRow7.add(textField);
+        layoutRow7.add(textField2);
+        layoutRow7.add(textField3);
+        layoutRow7.add(textField4);
+        layoutColumn4.add(checkboxGroup);
+        layoutColumn4.add(layoutRow8);
+        layoutRow8.add(comboBox);
+        layoutRow8.add(comboBox2);
+        layoutRow8.add(buttonPrimary9);
+        layoutColumn4.add(layoutRow9);
+        layoutRow9.add(checkboxGroup2);
+        layoutRow5.add(avatarItems);
+    }
+
+    record SampleItem(String value, String label, Boolean disabled) {
+    }
+
+    private void setComboBoxSampleData(ComboBox comboBox) {
+        List<SampleItem> sampleItems = new ArrayList<>();
+        sampleItems.add(new SampleItem("first", "First", null));
+        sampleItems.add(new SampleItem("second", "Second", null));
+        sampleItems.add(new SampleItem("third", "Third", Boolean.TRUE));
+        sampleItems.add(new SampleItem("fourth", "Fourth", null));
+        comboBox.setItems(sampleItems);
+        comboBox.setItemLabelGenerator(item -> ((SampleItem) item).label());
+    }
+
+    private void setAvatarItemsSampleData(MultiSelectListBox multiSelectListBox) {
+        record Person(String name, String profession) {
+        }
+        ;
+        List<Person> data = List.of(new Person("Aria Bailey", "Endocrinologist"), new Person("Aaliyah Butler", "Nephrologist"), new Person("Eleanor Price", "Ophthalmologist"), new Person("Allison Torres", "Allergist"), new Person("Madeline Lewis", "Gastroenterologist"));
+        multiSelectListBox.setItems(data);
+        multiSelectListBox.setRenderer(new ComponentRenderer(item -> {
+            AvatarItem avatarItem = new AvatarItem();
+            avatarItem.setHeading(((Person) item).name);
+            avatarItem.setDescription(((Person) item).profession);
+            avatarItem.setAvatar(new Avatar(((Person) item).name));
+            return avatarItem;
+        }));
+    }
+}
